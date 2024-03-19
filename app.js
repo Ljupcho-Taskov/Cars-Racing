@@ -108,13 +108,33 @@ $(function () {
     if (previousResults.length > 0) {
       const lastResult = previousResults[previousResults.length - 1];
       previousResultsCol.append(`
-      <h3 class="mt-2 mb-5">Last results from the previous time you played this game:</h3>
-      <table class="w-100">
-        <tbody>
-          <tr><td>Car 1 Finished in: <span class="white">${lastResult.car1Place}</span> place with a time of: <span class="white">${lastResult.car1Time}</span> milliseconds!</td></tr>
-          <tr><td>Car 2 Finished in: <span class="red">${lastResult.car2Place}</span> place with a time of: <span class="red">${lastResult.car2Time}</span> milliseconds!</td></tr>
-        </tbody>
-      </table>
+      
+            <h3 class="mb-4">Last results from the previous time you played this game:</h3>
+            
+              <table class="w-100">
+                <tbody>
+                  <tr>
+                    <td>
+                      Car 1 Finished in:
+                      <span class="white">${lastResult.car1Place}</span> place
+                      with a time of:
+                      <span class="white">${lastResult.car1Time}</span>
+                      milliseconds!
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Car 2 Finished in:
+                      <span class="red">${lastResult.car2Place}</span> place
+                      with a time of:
+                      <span class="red">${lastResult.car2Time}</span>
+                      milliseconds!
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            
+          
     `);
     }
   }
